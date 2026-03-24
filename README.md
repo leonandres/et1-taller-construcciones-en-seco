@@ -5,11 +5,12 @@ Material didáctico para el taller **Energías Alternativas** (5° año) de la E
 ## 📁 Estructura del Proyecto
 
 et1-energias-alternativas/
+│  
+├── README.md  
+├── index.html # Página principal  
+├── styles.css # Estilos globales  
 │
-├── README.md
-├── index.html # Página principal
-├── styles.css # Estilos globales
-│
+
 ├── img/ # Imágenes del sitio
 │ ├── solar-panel.jpg
 │ ├── aerogenerador.jpg
