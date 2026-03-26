@@ -6,6 +6,31 @@
     <title>Clase 2: Vidrios y Carpinterías | ET N°1</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+        /* 1. Resaltado suave para la sección actual en el menú */
+        nav ul li a.active {
+            background-color: rgba(255, 255, 255, 0.15); /* Un fondo blanco semitransparente (ideal para menú oscuro) */
+            border-radius: 6px;
+            font-weight: 700;
+            border-left: 4px solid var(--accent, #3498db); /* Una barrita de color a la izquierda para destacar */
+        }
+        
+        /* Nota: Si tu menú es de color blanco/claro, borra el de arriba y usa este: */
+        /* nav ul li a.active { background-color: rgba(0, 0, 0, 0.05); border-left: 4px solid var(--primary, #0056b3); } */
+
+        /* 2. El estilo para la barrita de los títulos (reemplaza los emojis) */
+        .title-bar {
+            display: inline-block;
+            width: 5px;
+            height: 22px;
+            background-color: var(--primary, #0056b3);
+            border-radius: 4px;
+            margin-right: 12px;
+            vertical-align: middle;
+            margin-top: -3px; /* Pequeño ajuste para centrarlo perfecto con la letra */
+        }
+    </style>
 </head>
 <body>
 
@@ -24,8 +49,9 @@
                 <li><a href="../clase-4/clase4.html">Clase 4: Pinturas</a></li>
                 
                 <li class="has-submenu" id="sistemas-menu">
-                    <a href="../clase-5/sistemas.html" onclick="toggleSubmenu(event)">Clase 5: Construcción en Seco</a>
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(event)">Clase 5: Construcción en Seco</a>
                     <ul class="submenu">
+                        <li><a href="../clase-5/sistemas.html">Sistemas de Construcción</a></li>
                         <li><a href="../clase-5/historia.html">Historia y Evolución</a></li>
                         <li><a href="../clase-5/tabiqueria.html">Tabiquería y Placas</a></li>
                         <li><a href="../clase-5/ventajas.html">Ventajas y Análisis</a></li>
@@ -50,30 +76,30 @@
                 <p>Su función es doble: <strong>Conexión</strong> (establece un puente visual ininterrumpido entre los locales y el entorno exterior) y <strong>Habitabilidad</strong> (es el canal primario para iluminar y ventilar los espacios de manera natural).</p>
             </div>
 
-            <h3>🛠️ Evolución material del cerramiento</h3>
+            <h3 style="margin-top: 3rem;"><span class="title-bar"></span>Evolución material del cerramiento</h3>
             <p>La carpintería es el dispositivo de cierre y control. A lo largo de la historia, los materiales elegidos para conformar los marcos han evolucionado buscando maximizar la luz y el confort:</p>
 
             <div class="grid-pilares">
                 <div class="pilar-card">
-                    <h4 style="color: var(--primary);">🪵 Madera</h4>
+                    <h4 style="color: var(--primary);">Madera</h4>
                     <p><strong>Era:</strong> Uso tradicional durante siglos.<br>
                     <strong>Características:</strong> Ofrece una calidez estética inigualable y robustez clásica. Al ser un aislante natural, evita la transferencia térmica, aunque requiere mantenimiento constante ante las inclemencias del clima.</p>
                 </div>
                 
                 <div class="pilar-card">
-                    <h4 style="color: var(--primary);">⚙️ Acero</h4>
+                    <h4 style="color: var(--primary);">Acero</h4>
                     <p><strong>Era:</strong> Racionalismo del Siglo XX.<br>
                     <strong>Características:</strong> Permitió crear marcos extremadamente delgados pero altamente resistentes. Su principal problema es la oxidación y que transfiere el frío y el calor con mucha facilidad.</p>
                 </div>
                 
                 <div class="pilar-card" style="grid-column: span 2;">
-                    <h4 style="color: var(--accent);">🏗️ Aluminio y PVC</h4>
+                    <h4 style="color: var(--accent);">Aluminio y PVC</h4>
                     <p><strong>Era:</strong> Actualidad técnica.<br>
                     <strong>Beneficio clave:</strong> Eficiencia, bajo costo y nulo mantenimiento. Permiten un aumento sustancial de la dimensión de los marcos, maximizando la transparencia del vidrio y sumando prestaciones avanzadas de seguridad y ruptura de puente térmico.</p>
                 </div>
             </div>
 
-            <h3 style="margin-top: 4rem;">🧩 Anatomía estructural y Glosario</h3>
+            <h3 style="margin-top: 4rem;"><span class="title-bar"></span>Anatomía estructural y Glosario</h3>
             <p>Para hablar con propiedad en el taller y en la obra, es fundamental conocer los macro componentes operativos y los términos perimetrales de sujeción:</p>
 
             <table class="tech-table">
@@ -115,7 +141,7 @@
                 </tbody>
             </table>
 
-            <h3 style="margin-top: 4rem;">🌡️ Matriz diagnóstica de aislación y confort</h3>
+            <h3 style="margin-top: 4rem;"><span class="title-bar"></span>Matriz diagnóstica de aislación y confort</h3>
             <p>La temperatura interior depende fuertemente del aporte solar directo y las horas de soleamiento. Además de los marcos, el cristal elegido es el responsable directo de la gestión ambiental:</p>
 
             <div style="background: white; border-radius: 8px; padding: 2rem; border: 1px solid #ddd; margin-top: 1.5rem;">
@@ -128,7 +154,7 @@
                 </ul>
             </div>
 
-            <h3 style="margin-top: 4rem;">🧠 Evaluaciones Rápidas del Taller</h3>
+            <h3 style="margin-top: 4rem;"><span class="title-bar"></span>Evaluaciones Rápidas del Taller</h3>
 
             <div class="quiz-container" style="margin-top: 1.5rem;">
                 <p><strong>1. Morfología:</strong> Imagina que estás revisando los planos de una ventana expuesta a lluvias constantes. ¿Cuál es el componente del muro que obligatoriamente <strong>debe tener pendiente hacia el exterior</strong> para expulsar el agua?</p>
@@ -175,6 +201,37 @@
     </main>
 
     <script>
+        // ESTA ES LA MAGIA DEL MENÚ AUTOMÁTICO
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. Obtenemos el nombre del archivo actual (ej: vidrios-y-carpinteria.html)
+            const currentPath = window.location.pathname.split('/').pop(); 
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const submenu = document.getElementById('sistemas-menu');
+            
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                
+                // 2. Comparamos los links del menú con la página actual
+                if (linkPath && currentPath === linkPath && linkPath !== 'javascript:void(0)') {
+                    // Si coincide, le agregamos la clase "active" (el color de fondo suave)
+                    link.classList.add('active');
+                    
+                    // 3. Si el enlace que coincide resulta que está ADENTRO del submenú, lo abrimos automáticamente
+                    if (link.closest('.submenu')) {
+                        submenu.classList.add('open');
+                    }
+                }
+            });
+        });
+
+        // Este código es para abrir/cerrar haciendo clic manual
+        function toggleSubmenu(event) {
+            event.preventDefault();
+            const menuItem = document.getElementById('sistemas-menu');
+            menuItem.classList.toggle('open');
+        }
+
+        /* ----- Funciones de los Quizzes ----- */
         function verificarQ1(respuesta) {
             const fb = document.getElementById('fb-q1');
             if(respuesta === 'alf') {
@@ -209,12 +266,6 @@
                 fb.innerHTML = "❌ Incorrecto. Ese cristal por sí solo no aporta suficiente aislamiento.";
                 fb.className = "incorrecto";
             }
-        }
-
-        function toggleSubmenu(event) {
-            event.preventDefault();
-            const menuItem = document.getElementById('sistemas-menu');
-            menuItem.classList.toggle('open');
         }
     </script>
 </body>
