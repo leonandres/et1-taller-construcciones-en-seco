@@ -14,11 +14,15 @@
         
         <h1>Sistemas Constructivos</h1>
         <span class="school-name">4° Año - ET N°1</span>
+
+        <button id="btn-theme" class="theme-btn" onclick="toggleTheme()">
+            🌓 
+        </button>
         
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio del Taller</a></li>
-                <li><a href="../clase-1/clase1.html">Clase 1: Seg. e Higiene</a></li>
+                <li><a href="../clase-1/seguridad-e-higiene.html">Clase 1: Seg. e Higiene</a></li>
                 <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y Carpinterías</a></li>
                 <li><a href="../clase-3/clase3.html">Clase 3: Pieles de Vidrio</a></li>
                 <li><a href="../clase-4/clase4.html">Clase 4: Pinturas</a></li>
@@ -41,7 +45,7 @@
 
     <main>
         <div class="container">
-            <span class="badge">Unidad temática 3</span>
+            <span class="badge">Unidad temática 5</span>
             <h2>Sistemas de construcción en seco</h2>
             
             <img src="../img/construccion-en-seco.jpeg" alt="Múltiples sistemas de construcción en seco" class="hero-image">
@@ -50,13 +54,13 @@
                 <p>El universo de la construcción en seco abarca mucho más que perfiles y placas de yeso. La clave para clasificar estos sistemas es entender su función física y mecánica en la obra. La distinción principal que define cómo se calcula un proyecto es la diferencia entre los <span class="highlight">sistemas estructurales</span> (los que soportan el peso del edificio), los <span class="highlight">sistemas no estructurales</span> (los que dividen espacios), los <span class="highlight">sistemas de envolvente</span> (que protegen del clima) y los <span class="highlight">sistemas modulares</span> (prefabricación total).</p>
             </div>
 
-            <div style="background-color: #f8f9fa; border: 1px solid #d1d8e0; border-radius: 8px; padding: 1.5rem; margin-bottom: 3rem;">
-                <h4 style="color: var(--primary); margin-bottom: 0.5rem;">📊 El impacto logístico</h4>
+            <div style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 3rem; transition: all 0.3s ease;">
+                <h4 style="color: var(--heading-color); margin-bottom: 0.5rem;"><span class="title-bar"></span>El impacto logístico</h4>
                 <p style="font-size: 0.95rem; margin-bottom: 0;">En Argentina, existe un organismo dedicado exclusivamente a estudiar, estandarizar y promover este método constructivo, llamado <strong>Instituto de la Construcción en Seco (INCOSE)</strong>. Este instituto afirma que una vivienda construida con Steel Framing pesa apenas un <strong>10%</strong> en comparación con una obra húmeda tradicional.</p>
             </div>
 
-            <h3 id="estructurales">🏗️ 1. Sistemas estructurales (El esqueleto portante)</h3>
-            <p><strong>Atención:</strong> Estos sistemas <strong>soportan el peso de la edificación</strong>. Transmiten las cargas gravitatorias y dinámicas hacia las fundaciones. Requieren cálculo de ingeniería civil.</p>
+            <h3 id="estructurales"><span class="title-bar"></span>1. Sistemas estructurales (El esqueleto portante)</h3>
+            <p> Estos sistemas <strong>soportan el peso de la edificación</strong>. Transmiten las cargas gravitatorias y dinámicas hacia las fundaciones. Requieren cálculo de ingeniería civil.</p>
 
             <div class="grid-pilares">
                 <div class="pilar-card sin-padding-top">
@@ -64,7 +68,7 @@
                     <div class="card-content">
                         <h4>Steel Framing</h4>
                         <p>Sistema compuesto por perfiles de chapa de acero galvanizado estructural (calibres de 0.9mm o superiores). Al ser un material inorgánico, no sufre ataques de termitas y es completamente incombustible.</p>
-                        <a href="steel-framing.html" class="btn-leer-mas">Ver unidad completa &rarr;</a>
+                        <a href="../clase-6/steel-framing.html" class="btn-leer-mas">Ver unidad completa &rarr;</a>
                     </div>
                 </div>
 
@@ -93,8 +97,8 @@
                 </div>
             </div>
 
-            <h3 id="no-estructurales" style="margin-top: 4rem;">🧱 2. Sistemas no estructurales (División interior)</h3>
-            <p><strong>Atención:</strong> Su función es <strong>dividir, distribuir o revestir ambientes interiores</strong>. No tienen capacidad portante y jamás deben recibir cargas de techos.</p>
+            <h3 id="no-estructurales" style="margin-top: 4rem;"><span class="title-bar"></span>2. Sistemas no estructurales (División interior)</h3>
+            <p>Estos sistemas <strong>NO</strong> soportan el peso de la edificación. Su función es <strong>dividir, distribuir o revestir ambientes interiores</strong>. No tienen capacidad portante y jamás deben recibir cargas de techos.</p>
 
             <div class="grid-pilares">
                 <div class="pilar-card sin-padding-top">
@@ -114,7 +118,7 @@
                 </div>
             </div>
 
-            <h3 id="envolvente" style="margin-top: 4rem;">🛡️ 3. Sistemas de envolvente exterior</h3>
+            <h3 id="envolvente" style="margin-top: 4rem;"><span class="title-bar"></span>3. Sistemas de envolvente exterior</h3>
             <p>Estos sistemas se instalan por el lado exterior de la estructura portante. Su función es ser la "piel" del edificio y mejorar la eficiencia energética.</p>
 
             <div class="grid-pilares">
@@ -135,10 +139,10 @@
                 </div>
             </div>
 
-            <h3 id="modulares" style="margin-top: 4rem;">📦 4. Sistemas industrializados y construcción modular</h3>
+            <h3 id="modulares" style="margin-top: 4rem;"><span class="title-bar"></span>4. Sistemas industrializados y construcción modular</h3>
             <p>Es el nivel máximo de eficiencia en la construcción en seco. Traslada los procesos típicos de una obra a una línea de ensamblaje industrial controlada.</p>
 
-            <div class="intro-box" style="border-left-color: var(--primary); background-color: #fff; padding: 0; overflow: hidden;">
+            <div class="intro-box" style="border-left-color: var(--primary); background-color: var(--card-bg); padding: 0; overflow: hidden;">
                 <iframe width="100%" height="450" src="https://www.youtube-nocookie.com/embed/l-wR75eeAoI" title="¿Conoces la construcción modular?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-bottom: 4px solid var(--accent);"></iframe>
                 <div style="padding: 2rem;">
                     <h4>Módulos 3D de fábrica (Volumétricos)</h4>
@@ -147,14 +151,22 @@
             </div>
 
             <div class="quiz-container">
-                <h3>🧠 Taller interactivo: Pon a prueba tu ojo clínico</h3>
+                <h3><span class="title-bar"></span>Taller interactivo: Pon a prueba tu ojo clínico</h3>
                 <p>Observa la siguiente imagen de una obra en ejecución. Basado en los materiales y el método de unión que ves, ¿a qué sistema general corresponde?</p>
-                <img src="img/actividad-1.jpeg" alt="Muro de ladrillos con mezcla" class="quiz-img">
+                <img src="../img/actividad-1.jpeg" alt="Muro de ladrillos con mezcla" class="quiz-img">
                 <div>
                     <button class="btn-quiz" onclick="verificarRespuesta('seca')">Construcción en Seco</button>
                     <button class="btn-quiz" onclick="verificarRespuesta('humeda')">Construcción Húmeda</button>
                 </div>
                 <p id="quiz-feedback"></p>
+            </div>
+
+            <div class="recursos-box" style="margin-top: 3rem;">
+                <h3><span class="title-bar"></span>Material complementario y descargas</h3>
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/17pg_9MHTqt8-2VQUN2A9VIogcaGZGnEqoScI4uFQSho/edit?tab=t.0#heading=h.543p3dz1ii8y" target="_blank">📖 Apunte de Google Docs: Introducción a la construcción en seco</a></li>
+                    <li><a href="Clase 5 - Introducción a la construcción en seco.pdf" target="_blank">📄 Descargar Presentación: Introducción a la Construcción en Seco (PDF)</a></li>
+                </ul>
             </div>
 
             <footer>
@@ -164,6 +176,7 @@
     </main>
 
     <script>
+        // Funciones del Cuestionario
         function verificarRespuesta(respuesta) {
             const feedbackElement = document.getElementById('quiz-feedback');
             if(respuesta === 'humeda') {
@@ -174,11 +187,57 @@
                 feedbackElement.className = "incorrecto";
             }
         }
+
+        // Abrir Submenú
         function toggleSubmenu(event) {
             event.preventDefault();
             const menuItem = document.getElementById('sistemas-menu');
             menuItem.classList.toggle('open');
         }
+
+        // Funciones del Modo Oscuro
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            const btn = document.getElementById('btn-theme');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('theme', 'light');
+                btn.innerHTML = '🌙 Modo Oscuro';
+            }
+        }
+
+        // Carga inicial del documento (Tema y Menú activo)
+        document.addEventListener("DOMContentLoaded", function() {
+            // Revisar tema guardado
+            const savedTheme = localStorage.getItem('theme');
+            const btn = document.getElementById('btn-theme');
+            
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                if (btn) btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                if (btn) btn.innerHTML = '🌙 Modo Oscuro';
+            }
+
+            // Resaltar menú actual
+            const currentPath = window.location.pathname.split('/').pop(); 
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const submenu = document.getElementById('sistemas-menu');
+            
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath && currentPath === linkPath && linkPath !== 'javascript:void(0)') {
+                    link.classList.add('active');
+                    if (link.closest('.submenu')) {
+                        submenu.classList.add('open');
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html>
