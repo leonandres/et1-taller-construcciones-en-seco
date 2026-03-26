@@ -20,15 +20,16 @@
 
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio del Taller</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../clase-1/seguridad-e-higiene.html">Clase 1: Seg. e Higiene</a></li>
                 <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y Carpinterías</a></li>
                 <li><a href="../clase-3/clase3.html">Clase 3: Pieles de Vidrio</a></li>
                 <li><a href="../clase-4/clase4.html">Clase 4: Pinturas</a></li>
                 
                 <li class="has-submenu" id="sistemas-menu">
-                    <a href="../clase-5/sistemas.html" onclick="toggleSubmenu(event)">Clase 5: Construcción en seco</a>
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(event)">Clase 5: Construcción en seco</a>
                     <ul class="submenu">
+                        <li><a href="../clase-5/sistemas.html">Sistemas de construcción</a></li>
                         <li><a href="../clase-5/historia.html">Historia y evolución</a></li>
                         <li><a href="../clase-5/tabiqueria.html">Tabiquería y placas</a></li>
                         <li><a href="../clase-5/ventajas.html">Ventajas y análisis</a></li>
@@ -44,22 +45,20 @@
     <main>
         <div class="container">
             <span class="badge">Unidad temática 5</span>
-            <h2>5.1 Ventajas generales del sistema</h2>
+            <h2>Ventajas generales del sistema</h2>
             
-            <img src="../img/5 - ventajas.jpg" 
-                 alt="Corte técnico mostrando las capas de aislación en un muro" 
-                 class="hero-image">
+            <img src="../img/5 - ventajas.jpg" alt="Corte técnico mostrando las capas de aislación en un muro" class="hero-image">
 
             <div class="intro-box">
                 <p>La adopción de la construcción en seco a nivel global no responde únicamente a una cuestión estética, sino a beneficios medibles en términos de rendimiento, costos y sustentabilidad.</p>
                 <p>Al comparar los sistemas industrializados (como el Steel Framing) con la mampostería tradicional, se destacan diferencias sustanciales en la física del edificio y en la gestión de la obra.</p>
             </div>
 
-            <h3>Eficiencia energética y confort térmico</h3>
+            <h3><span class="title-bar"></span>Eficiencia energética y confort térmico</h3>
             <p>Una de las mayores fortalezas del sistema es su capacidad para incorporar aislación térmica y acústica de forma continua. Al estar los muros compuestos por un entramado hueco, el espacio entre montantes se aprovecha para colocar materiales aislantes (como lana de vidrio, EPS o celulosa) sin perder superficie útil en el interior.</p>
             <p>Esto permite eliminar los puentes térmicos y lograr que una pared de construcción en seco de 15 cm de espesor tenga un nivel de aislación superior a un muro de ladrillo macizo de 30 cm, reduciendo drásticamente el consumo de energía para calefacción y refrigeración.</p>
 
-            <h3>Comparativa de beneficios</h3>
+            <h3><span class="title-bar"></span>Comparativa de beneficios</h3>
             
             <div class="grid-pilares">
                 <div class="pilar-card">
@@ -83,30 +82,31 @@
                 </div>
             </div>
 
-            <h3 style="margin-top: 3rem;">Limitaciones y consideraciones técnicas</h3>
+            <h3 style="margin-top: 3rem;"><span class="title-bar"></span>Limitaciones y consideraciones técnicas</h3>
             <p>A pesar de sus múltiples ventajas, el sistema presenta consideraciones específicas que deben contemplarse durante la etapa de proyecto y ejecución:</p>
 
-            <div class="table-section">
-                <div class="grid-row header-row">
-                    <div class="grid-item">Factor</div>
-                    <div class="grid-item">Descripción técnica</div>
-                </div>
-
-                <div class="grid-row">
-                    <div class="grid-item"><strong>Mano de obra</strong></div>
-                    <div class="grid-item">Requiere personal con capacitación técnica específica en montaje, lectura de planos de taller y uso correcto de fijaciones mecánicas. No admite improvisación en obra.</div>
-                </div>
-
-                <div class="grid-row">
-                    <div class="grid-item"><strong>Proyecto exhaustivo</strong></div>
-                    <div class="grid-item">La ingeniería de detalle debe estar completamente definida antes de iniciar. Modificar dimensiones estructurales sobre la marcha es complejo y riesgoso.</div>
-                </div>
-
-                <div class="grid-row">
-                    <div class="grid-item"><strong>Límites de altura</strong></div>
-                    <div class="grid-item">El Steel Framing puro suele ser eficiente hasta los 4 o 5 pisos de altura. Para edificaciones mayores, requiere combinarse con estructuras pesadas de hormigón o acero laminado.</div>
-                </div>
-            </div>
+            <table class="tech-table">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Descripción técnica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mano de obra</strong></td>
+                        <td>Requiere personal con capacitación técnica específica en montaje, lectura de planos de taller y uso correcto de fijaciones mecánicas. No admite improvisación en obra.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Proyecto exhaustivo</strong></td>
+                        <td>La ingeniería de detalle debe estar completamente definida antes de iniciar. Modificar dimensiones estructurales sobre la marcha es complejo y riesgoso.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Límites de altura</strong></td>
+                        <td>El Steel Framing puro suele ser eficiente hasta los 4 o 5 pisos de altura. Para edificaciones mayores, requiere combinarse con estructuras pesadas de hormigón o acero laminado.</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <footer>
                 © 2026 - Taller construcciones 4° - ET N°1
@@ -114,5 +114,57 @@
         </div>
     </main>
 
+    <script>
+        // Abrir Submenú
+        function toggleSubmenu(event) {
+            event.preventDefault();
+            const menuItem = document.getElementById('sistemas-menu');
+            menuItem.classList.toggle('open');
+        }
+
+        // Funciones del Modo Oscuro
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            const btn = document.getElementById('btn-theme');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('theme', 'light');
+                btn.innerHTML = '🌙 Modo Oscuro';
+            }
+        }
+
+        // Carga inicial del documento (Tema y Menú activo)
+        document.addEventListener("DOMContentLoaded", function() {
+            // Revisar tema guardado
+            const savedTheme = localStorage.getItem('theme');
+            const btn = document.getElementById('btn-theme');
+            
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                if (btn) btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                if (btn) btn.innerHTML = '🌙 Modo Oscuro';
+            }
+
+            // Resaltar menú actual
+            const currentPath = window.location.pathname.split('/').pop(); 
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const submenu = document.getElementById('sistemas-menu');
+            
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath && currentPath === linkPath && linkPath !== 'javascript:void(0)') {
+                    link.classList.add('active');
+                    if (link.closest('.submenu')) {
+                        submenu.classList.add('open');
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
