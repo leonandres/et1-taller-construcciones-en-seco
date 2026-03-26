@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7: Revestimientos | 4TO Año | ET N°1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <aside>
+        <img src="../img/otto-krause-1.svg" alt="Logo ET N°1 Otto Krause" class="school-logo">
+        
+        <h1>Sistemas Constructivos</h1>
+        <span class="school-name">4° Año - ET N°1</span>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio del Taller</a></li>
+                <li><a href="../clase-1/clase1.html">Clase 1: Seg. e Higiene</a></li>
+                <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y Carpinterías</a></li>
+                <li><a href="../clase-3/clase3.html">Clase 3: Pieles de Vidrio</a></li>
+                <li><a href="../clase-4/clase4.html">Clase 4: Pinturas</a></li>
+                
+                <li class="has-submenu" id="sistemas-menu">
+                    <a href="../clase-5/sistemas.html" onclick="toggleSubmenu(event)">Clase 5: Construcción en seco</a>
+                    <ul class="submenu">
+                        <li><a href="../clase-5/sistemas.html">Sistemas de Construcción</a></li>
+                        <li><a href="../clase-5/historia.html">Historia y Evolución</a></li>
+                        <li><a href="../clase-5/tabiqueria.html">Tabiquería y Placas</a></li>
+                        <li><a href="../clase-5/ventajas.html">Ventajas y Análisis</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../clase-6/steel-framing.html">Clase 6: Steel Framing</a></li>
+                <li><a href="../clase-7/revestimientos.html" class="active">Clase 7: Revestimientos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="container">
+            <span class="badge">Unidad temática 7</span>
+            <h2>Revestimientos y Terminaciones</h2>
+            
+            <p><strong>La piel del edificio.</strong> Los revestimientos son todos aquellos materiales que se aplican sobre las superficies "en bruto" (muros, pisos o cielorrasos) para darles su terminación final. En la escuela técnica debemos entender que su función no es meramente estética: un revestimiento es la <strong>primera barrera de defensa</strong> contra el desgaste mecánico (el tránsito de las personas), el agua y los agentes químicos (productos de limpieza).</p>
+
+            <img src="https://images.pexels.com/photos/1055071/pexels-photo-1055071.jpeg?auto=compress&cs=tinysrgb&w=850" alt="Colocación de revestimiento cerámico en piso" class="hero-image" style="margin-top: 1.5rem; height: 350px;">
+
+            <div class="intro-box">
+                <h4 style="color: var(--primary); margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif;">⚠️ Regla de Oro en Obra: El "Sustrato" manda</h4>
+                <p style="margin-bottom: 0;">El mejor y más caro porcelanato del mundo se va a despegar o quebrar si la base donde se apoya (llamada <strong>Sustrato</strong>, como una carpeta de cemento o un revoque) está sucia, floja, desnivelada o tiene humedad. El 70% del éxito en la colocación de un revestimiento depende de la preparación previa de la superficie.</p>
+            </div>
+
+            <h3 style="margin-top: 3rem;">🧱 1. Cerámica vs. Porcelanato (El duelo de los materiales)</h3>
+            <p>A simple vista pueden parecer idénticos, pero estructuralmente y químicamente se comportan de manera muy distinta. Conocer esta diferencia es vital para elegir el pegamento correcto.</p>
+
+            <div class="grid-pilares" style="margin-top: 1.5rem;">
+                <div class="pilar-card">
+                    <h4 style="color: #e67e22; font-size: 1.3rem;">Cerámico Tradicional</h4>
+                    <p><strong>Composición:</strong> Arcilla roja o blanca, cocida a temperatura media.</p>
+                    <p><strong>Absorción de agua:</strong> ALTA (actúa como una esponja).</p>
+                    <p>Al ser poroso, el pegamento tradicional penetra en los poros de la pieza y se ancla mecánicamente (como raíces en la tierra). Es más blando, fácil de cortar y perforar, pero menos resistente a los golpes.</p>
+                </div>
+                
+                <div class="pilar-card">
+                    <h4 style="color: #7f8c8d; font-size: 1.3rem;">Porcelanato</h4>
+                    <p><strong>Composición:</strong> Arcillas muy refinadas cocidas a altísima temperatura.</p>
+                    <p><strong>Absorción de agua:</strong> NULA (casi 0%).</p>
+                    <p>Al no tener poros (es como un vidrio), el pegamento común resbala y no se agarra. <strong>Requiere adhesivos especiales con aditivos poliméricos (plásticos)</strong> que generan una unión química. Es extremadamente duro y difícil de cortar.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 4rem;">🧪 2. Adhesivos y Pastinas</h3>
+            <p>El "Mortero de asiento" o pegamento ha evolucionado enormemente. Ya no se usa cemento y arena pura, sino mezclas pre-dosificadas en bolsas (ej. Klaukol, Weber, Sika) que vienen listas para agregarles agua.</p>
+
+            <table class="tech-table">
+                <thead>
+                    <tr>
+                        <th>Tipo de Adhesivo</th>
+                        <th>Uso técnico principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Adhesivo Impermeable Básico</strong></td>
+                        <td>Colocación de cerámicos comunes en interiores (habitaciones, pasillos).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adhesivo "Porcelanato" (Aditivado)</strong></td>
+                        <td>Contiene resinas para pegar piezas sin absorción. Uso obligatorio para porcelanatos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adhesivo Flexible</strong></td>
+                        <td>Para pisos radiantes (con losa térmica) o revestimientos en exteriores (patios, fachadas). Soporta los movimientos de dilatación y contracción por cambios de temperatura sin soltar la pieza.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pastina (Juntas)</strong></td>
+                        <td>Polvo que se hidrata para rellenar el espacio vacío (junta) entre placa y placa. Evita que entre agua debajo del revestimiento y absorbe las tensiones.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 4rem;">🛠️ 3. Práctica de Taller: El Doble Encolado</h3>
+            <p>A medida que la moda exige placas cada vez más grandes (ej. porcelanatos de 60x120 cm o mayores), la técnica de aplicación tuvo que cambiar. Ya no alcanza con poner "unos puntos de pegamento" en las esquinas.</p>
+            
+            <p>Para piezas mayores a 30x30 cm es <strong>obligatorio</strong> usar la técnica del <strong>Doble Encolado</strong> para evitar que queden burbujas de aire debajo de la placa (las cuales causan que la pieza suene a hueco o se rompa al pisarla).</p>
+            
+            <div style="background: #f8f9fa; border-radius: 8px; padding: 2.5rem; border-left: 6px solid #28a745; margin-top: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                <h4 style="color: #28a745; margin-top: 0; font-size: 1.2rem;">Pasos del Doble Encolado:</h4>
+                <ol style="line-height: 1.9; font-size: 1.05rem;">
+                    <li><strong>Peinado del sustrato:</strong> Se extiende el adhesivo sobre el piso o pared usando una <strong>llana dentada</strong> (una espátula con dientes que deja "cordones" de pegamento).</li>
+                    <li><strong>Untado de la pieza:</strong> Se aplica una capa muy fina y lisa de adhesivo en el reverso (la espalda) del cerámico o porcelanato.</li>
+                    <li><strong>Asentamiento:</strong> Se apoya la pieza sobre los cordones del piso y se presiona (o se golpea suavemente con un martillo de goma) para aplastar los cordones.</li>
+                    <li><strong>Resultado:</strong> El pegamento de la pieza se funde con los cordones del piso, logrando un 100% de cobertura sin cámaras de aire ocultas.</li>
+                </ol>
+            </div>
+
+            <h3 style="margin-top: 4rem;">💥 4. Patologías Comunes (¿Por qué fallan los revestimientos?)</h3>
+            <p>En el control de obra, es normal enfrentarnos a patologías (enfermedades de la construcción). Estas son las fallas más comunes y sus causas:</p>
+            
+            <div class="grid-pilares" style="margin-top: 1.5rem;">
+                <div class="pilar-card" style="border-top: 4px solid #d9534f;">
+                    <h4>Desprendimiento ("Se saltó el piso")</h4>
+                    <p>Ocurre generalmente por dos motivos: se usó un pegamento básico para intentar pegar un porcelanato, o no se respetaron las <strong>Juntas de Dilatación</strong> perimetrales. Si el piso se calienta (en verano) se expande, y si choca contra las paredes sin tener un espacio libre, "salta" hacia arriba.</p>
+                </div>
+                
+                <div class="pilar-card" style="border-top: 4px solid #f39c12;">
+                    <h4>Fisura limpia (Pieza partida)</h4>
+                    <p>Si la pieza está rajada al medio pero no está suelta, casi siempre es culpa de un mal <strong>Sustrato</strong>. Hubo un movimiento estructural en el edificio o la carpeta se rajó debajo, transmitiendo esa rotura directamente a la cerámica.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 4rem;">🧠 Actividad Práctica</h3>
+            
+            <div class="quiz-container" style="margin-top: 1.5rem;">
+                <p><strong>1. Elección de materiales:</strong> Te encargan renovar el piso de un local comercial y deciden comprar un Porcelanato de alta resistencia de 60x60 cm. Al ir a comprar los insumos, ¿qué debes pedir?</p>
+                <div style="margin-top: 1rem;">
+                    <button class="btn-quiz" onclick="verificarQ1('basico')">Pegamento impermeable básico y colocación simple.</button>
+                    <button class="btn-quiz" onclick="verificarQ1('doble')">Adhesivo para porcelanato y colocación con Doble Encolado.</button>
+                </div>
+                <p id="fb-q1" style="margin-top: 15px; font-weight: bold; min-height: 24px;"></p>
+            </div>
+
+            <div class="recursos-box" style="margin-top: 3rem;">
+                <h3>📚 Material Complementario y Descargas</h3>
+                <ul>
+                    <li><a href="#" target="_blank">📄 Ficha técnica: Selección de llanas dentadas según el revestimiento (PDF)</a></li>
+                    <li><a href="#" target="_blank">🎥 Video Práctico: Técnica correcta del Doble Encolado en obra</a></li>
+                </ul>
+            </div>
+
+            <footer>
+                © 2026 - Material didáctico - Departamento de Construcciones - ET N°1
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        function verificarQ1(respuesta) {
+            const fb = document.getElementById('fb-q1');
+            if(respuesta === 'doble') {
+                fb.innerHTML = "✅ ¡Excelente! El porcelanato no tiene absorción (requiere pegamento especial) y al medir más de 30x30cm exige doble encolado.";
+                fb.className = "correcto";
+            } else {
+                fb.innerHTML = "❌ Incorrecto. El pegamento básico no se adherirá al porcelanato, y una placa tan grande necesita doble encolado para no sonar a hueco.";
+                fb.className = "incorrecto";
+            }
+        }
+
+        function toggleSubmenu(event) {
+            event.preventDefault();
+            const menuItem = document.getElementById('sistemas-menu');
+            menuItem.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
