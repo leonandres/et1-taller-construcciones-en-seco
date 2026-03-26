@@ -19,20 +19,19 @@
             🌓 
         </button>
         
-
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio del Taller</a></li>
                 <li><a href="../clase-1/seguridad-e-higiene.html">Clase 1: Seg. e Higiene</a></li>
-                <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y carpinterías</a></li>
-                <li><a href="../clase-3/clase3.html">Clase 3: Pieles de vidrio</a></li>
+                <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y Carpinterías</a></li>
+                <li><a href="../clase-3/clase3.html">Clase 3: Pieles de Vidrio</a></li>
                 <li><a href="../clase-4/clase4.html">Clase 4: Pinturas</a></li>
                 
                 <li class="has-submenu" id="sistemas-menu">
                     <a href="javascript:void(0)" onclick="toggleSubmenu(event)">Clase 5: Construcción en seco</a>
                     <ul class="submenu">
                         <li><a href="../clase-5/sistemas.html">Sistemas de construcción</a></li>
-                        <li><a href="../clase-5/historia.html">Historia y evolución</a></li>
+                        <li><a href="historia.html">Historia y evolución</a></li>
                         <li><a href="../clase-5/tabiqueria.html">Tabiquería y placas</a></li>
                         <li><a href="../clase-5/ventajas.html">Ventajas y análisis</a></li>
                     </ul>
@@ -42,13 +41,12 @@
                 <li><a href="../clase-7/revestimientos.html">Clase 7: Revestimientos</a></li>
             </ul>
         </nav>
-        
     </aside>
 
     <main>
         <div class="container">
             <span class="badge">Unidad temática 2</span>
-            <h2>2.1 Historia y evolución</h2>
+            <h2>Historia y evolución</h2>
             
             <img src="../img/2 - Historia.jpeg" alt="Estructura de madera en construcción, recordando los orígenes" class="hero-image">
 
@@ -57,19 +55,19 @@
                 <p>Nació de una necesidad concreta: la urgencia de construir viviendas rápidas, económicas y estandarizadas durante la expansión territorial y el crecimiento demográfico acelerado.</p>
             </div>
 
-            <h3>🪵 El origen: El "Balloon Frame" de Chicago</h3>
+            <h3><span class="title-bar"></span>🪵 El origen: El "Balloon Frame" de Chicago</h3>
             <p>Todo comenzó en la década de 1830 en Estados Unidos. La ciudad de Chicago experimentaba una explosión demográfica y necesitaba casas con urgencia. No había tiempo para esperar el secado de los ladrillos ni suficientes albañiles especializados.</p>
             <p>La solución fue el <strong>Balloon Frame</strong> (armazón de globo). Aprovechando la reciente invención de los clavos de acero fabricados a máquina y los aserraderos industriales que producían madera en medidas estándar, se empezaron a armar casas atornillando listones de madera. Era tan ligero que los constructores tradicionales se burlaban diciendo que "un soplo de viento se las llevaría como a un globo", dándole su nombre histórico.</p>
 
-            <h3>📜 La revolución de la placa de yeso</h3>
+            <h3><span class="title-bar"></span>📜 La revolución de la placa de yeso</h3>
             <p>En 1894, Augustine Sackett patentó el "Sackett Board", un sándwich de yeso entre capas de papel fieltro.</p>
             <p>Este fue el nacimiento del <strong>Drywall</strong> (muro seco). Ahora, los operarios podían revestir una pared entera en cuestión de horas simplemente atornillando placas a los perfiles, eliminando definitivamente el agua del interior de la obra.</p>
 
-            <h3>🏗️ Del bosque a la siderurgia: El Steel Framing</h3>
+            <h3><span class="title-bar"></span>🏗️ Del bosque a la siderurgia: El Steel Framing</h3>
             <p>A mediados del siglo XX, la demanda de viviendas a gran escala impulsó la búsqueda de nuevos materiales. La madera presentaba ciertas limitaciones frente al fuego y las plagas, por lo que la industria siderúrgica intervino adaptando perfiles de chapa de acero galvanizado doblada en frío.</p>
             <p>Así se consolidó el <strong>Steel Framing</strong>. Mantuvo la misma lógica de ensamble rápido que la madera, pero sumó la resistencia y precisión milimétrica del acero.</p>
 
-            <h3 style="margin-top: 4rem;">⏳ Cronología del sistema</h3>
+            <h3 style="margin-top: 4rem;"><span class="title-bar"></span>⏳ Cronología del sistema</h3>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-year">1832</div>
@@ -116,6 +114,46 @@
             const menuItem = document.getElementById('sistemas-menu');
             menuItem.classList.toggle('open');
         }
+
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            const btn = document.getElementById('btn-theme');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('theme', 'light');
+                btn.innerHTML = '🌙 Modo Oscuro';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const savedTheme = localStorage.getItem('theme');
+            const btn = document.getElementById('btn-theme');
+            
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                if (btn) btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                if (btn) btn.innerHTML = '🌙 Modo Oscuro';
+            }
+
+            const currentPath = window.location.pathname.split('/').pop(); 
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const submenu = document.getElementById('sistemas-menu');
+            
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath && currentPath === linkPath && linkPath !== 'javascript:void(0)') {
+                    link.classList.add('active');
+                    if (link.closest('.submenu')) {
+                        submenu.classList.add('open');
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html>
