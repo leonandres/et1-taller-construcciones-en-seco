@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4: Pinturas | 4TO Año | ET N°1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <aside>
+        <img src="../img/otto-krause-1.svg" alt="Logo ET N°1 Otto Krause" class="school-logo">
+        
+        <h1>Sistemas Constructivos</h1>
+        <span class="school-name">4° Año - ET N°1</span>
+
+        <button id="btn-theme" class="theme-btn" onclick="toggleTheme()">
+            🌓 
+        </button>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio del Taller</a></li>
+                <li><a href="../clase-1/seguridad-e-higiene.html">Clase 1: Seg. e Higiene</a></li>
+                <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y Carpinterías</a></li>
+                <li><a href="../clase-3/clase3.html">Clase 3: Pieles de Vidrio</a></li>
+                <li><a href="clase4.html" class="active">Clase 4: Pinturas</a></li>
+                
+                <li class="has-submenu" id="sistemas-menu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(event)">Clase 5: Construcción en Seco</a>
+                    <ul class="submenu">
+                        <li><a href="../clase-5/sistemas.html">Sistemas de Construcción</a></li>
+                        <li><a href="../clase-5/historia.html">Historia y Evolución</a></li>
+                        <li><a href="../clase-5/tabiqueria.html">Tabiquería y Placas</a></li>
+                        <li><a href="../clase-5/ventajas.html">Ventajas y Análisis</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../clase-6/steel-framing.html">Clase 6: Steel Framing</a></li>
+                <li><a href="../clase-7/revestimientos.html">Clase 7: Revestimientos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="container">
+            <span class="badge">Unidad temática 4</span>
+            <h2>Pinturas y Tratamientos Superficiales</h2>
+            
+            <img src="../img/4 - pinturas.jpg" alt="Operario aplicando pintura con rodillo en obra" class="hero-image" onerror="this.src='https://images.pexels.com/photos/1669002/pexels-photo-1669002.jpeg?auto=compress&cs=tinysrgb&w=800'">
+
+            <div class="intro-box">
+                <p>En el ámbito de la construcción, solemos pensar que la pintura cumple una función puramente estética. Sin embargo, para un técnico constructor, la pintura es la <strong>primera barrera de protección</strong> del edificio.</p>
+                <p>Un esquema de pintura bien especificado protege a los metales de la corrosión (óxido), a las maderas de los hongos y los rayos UV, y a los muros de mampostería de la absorción de agua de lluvia.</p>
+            </div>
+
+            <h3 style="margin-top: 3rem;"><span class="title-bar"></span>1. ¿De qué está hecha la pintura?</h3>
+            <p>Toda pintura, sin importar su marca o uso, es una mezcla química compuesta principalmente por cuatro elementos fundamentales:</p>
+
+            <div class="grid-pilares" style="margin-top: 1.5rem;">
+                <div class="pilar-card">
+                    <h4 style="color: var(--heading-color);">Pigmentos</h4>
+                    <p>Son partículas sólidas muy finas que le dan el <strong>color y la opacidad</strong> (poder cubritivo) a la pintura. Protegen la superficie desviando los rayos ultravioletas del sol.</p>
+                </div>
+                
+                <div class="pilar-card">
+                    <h4 style="color: var(--heading-color);">Resina (Aglutinante)</h4>
+                    <p>Es el "pegamento" de la pintura. Es el componente que, una vez seco, forma la película sólida que adhiere los pigmentos a la pared. Determina la resistencia y lavabilidad.</p>
+                </div>
+
+                <div class="pilar-card">
+                    <h4 style="color: var(--heading-color);">Solvente (Vehículo)</h4>
+                    <p>Es el líquido que mantiene a la pintura fluida dentro del balde para poder aplicarla. Una vez aplicada, el solvente se evapora en el aire, permitiendo que la resina se endurezca. Puede ser agua o aguarrás/thinner.</p>
+                </div>
+
+                <div class="pilar-card">
+                    <h4 style="color: var(--heading-color);">Aditivos</h4>
+                    <p>Son productos químicos que se agregan en pequeñas cantidades para darle propiedades especiales: fungicidas (anti-hongos), secantes rápidos, o anti-salpicaduras.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 4rem;"><span class="title-bar"></span>2. Tipos de pinturas más usadas en obra</h3>
+            <p>Elegir la pintura equivocada para una superficie garantiza un fracaso prematuro (descascaramiento o ampollas). Esta es la clasificación principal que debes conocer:</p>
+
+            <table class="tech-table" style="margin-top: 1.5rem;">
+                <thead>
+                    <tr>
+                        <th>Tipo de Pintura</th>
+                        <th>Solvente Base</th>
+                        <th>Usos principales en obra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Látex / Acrílicas</strong></td>
+                        <td>Agua</td>
+                        <td>Muros de mampostería, revoques y placas de yeso (Drywall). Permiten que la pared "respire", evitando que la humedad quede atrapada.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Esmalte Sintético</strong></td>
+                        <td>Aguarrás mineral</td>
+                        <td>Metales (rejas, marcos de ventanas) y maderas. Forman una película muy dura, impermeable y lavable, pero tardan más en secar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pinturas Epóxicas</strong></td>
+                        <td>Solventes especiales</td>
+                        <td>Pisos industriales, garajes y hospitales. Son pinturas de dos componentes (pintura + catalizador) que generan una resistencia extrema al desgaste y a los químicos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Impermeabilizantes</strong></td>
+                        <td>Agua (con resinas elásticas)</td>
+                        <td>Techos, terrazas y muros exteriores. Tienen la capacidad de estirarse y contraerse con los cambios de temperatura, sellando microfisuras.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 4rem;"><span class="title-bar"></span>3. Preparación de la superficie: El secreto del éxito</h3>
+            <p>Una regla de oro en la construcción es que <em>"la mejor pintura del mundo fracasará sobre una superficie mal preparada"</em>. El 80% del éxito de un trabajo de pintura radica en los pasos previos:</p>
+            
+            <div style="background: var(--card-bg); border-radius: 8px; padding: 2rem; border-left: 4px solid var(--accent); margin-top: 1.5rem; border: 1px solid var(--border-color);">
+                <ul style="line-height: 1.8;">
+                    <li><strong>Limpieza:</strong> La superficie debe estar libre de polvo, grasa y humedad.</li>
+                    <li><strong>Lijado:</strong> Genera "mordiente" (porosidad) para que la nueva pintura se agarre mecánicamente, especialmente si se pinta sobre pintura vieja y brillante.</li>
+                    <li><strong>Imprimación (Fijador / Fondo):</strong> Es una capa transparente o blanca que se aplica antes de pintar. Sella los poros de un revoque nuevo para que no "chupe" tanta pintura cara, o actúa como anti-óxido en los metales.</li>
+                </ul>
+            </div>
+
+            <h3 style="margin-top: 4rem;"><span class="title-bar"></span>🧠 Actividad Práctica de Taller</h3>
+            
+            <div class="quiz-container" style="margin-top: 1.5rem;">
+                <p><strong>Desafío Técnico:</strong> Te asignan pintar el portón metálico corredizo de la escuela, el cual tiene algunas zonas con óxido incipiente. ¿Cuál es el procedimiento y material correcto a utilizar?</p>
+                <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                    <button class="btn-quiz" style="width: 100%; max-width: 500px;" onclick="verificarQuiz('latex')">A) Limpiar con un trapo húmedo y aplicar dos manos de Látex Exterior.</button>
+                    <button class="btn-quiz" style="width: 100%; max-width: 500px;" onclick="verificarQuiz('esmalte')">B) Lijar el óxido, aplicar fondo anti-óxido y terminar con Esmalte Sintético.</button>
+                </div>
+                <p id="fb-quiz" style="margin-top: 15px; font-weight: bold; min-height: 24px;"></p>
+            </div>
+
+            <footer>
+                © 2026 - Material didáctico - Departamento de Construcciones - ET N°1
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        // Función del Quiz
+        function verificarQuiz(respuesta) {
+            const fb = document.getElementById('fb-quiz');
+            if(respuesta === 'esmalte') {
+                fb.innerHTML = "✅ ¡Correcto! El metal requiere preparación mecánica (lija), protección química (anti-óxido) y una barrera impermeable (esmalte al solvente).";
+                fb.className = "correcto";
+            } else {
+                fb.innerHTML = "❌ Incorrecto. El látex es al agua; si lo aplicas sobre hierro, no solo no se adherirá bien, sino que acelerarás el proceso de oxidación.";
+                fb.className = "incorrecto";
+            }
+        }
+
+        // Función del menú desplegable
+        function toggleSubmenu(event) {
+            event.preventDefault();
+            const menuItem = document.getElementById('sistemas-menu');
+            menuItem.classList.toggle('open');
+        }
+
+        // Funciones del Modo Oscuro
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            const btn = document.getElementById('btn-theme');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('theme', 'light');
+                btn.innerHTML = '🌙 Modo Oscuro';
+            }
+        }
+
+        // Carga inicial del documento
+        document.addEventListener("DOMContentLoaded", function() {
+            const savedTheme = localStorage.getItem('theme');
+            const btn = document.getElementById('btn-theme');
+            
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                if (btn) btn.innerHTML = '☀️ Modo Claro';
+            } else {
+                if (btn) btn.innerHTML = '🌙 Modo Oscuro';
+            }
+
+            const currentPath = window.location.pathname.split('/').pop(); 
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const submenu = document.getElementById('sistemas-menu');
+            
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath && currentPath === linkPath && linkPath !== 'javascript:void(0)') {
+                    link.classList.add('active');
+                    if (link.closest('.submenu')) {
+                        submenu.classList.add('open');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
