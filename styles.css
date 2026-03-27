@@ -61,6 +61,15 @@ aside {
     overflow-y: auto;
 }
 
+/* Para que la barra de scroll del menú se vea más elegante */
+aside::-webkit-scrollbar {
+    width: 6px;
+}
+aside::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
 .school-logo {
     width: 85%;
     max-width: 160px;
