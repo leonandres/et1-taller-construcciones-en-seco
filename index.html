@@ -7,17 +7,26 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- ✅ SIN etiqueta de ícono = ícono genérico del navegador -->
 </head>
 <body>
-
     <aside>
-        <img src="img/otto-krause-1.svg" alt="Logo ET N°1 Otto Krause" class="school-logo">
-        <h1>Sistemas Constructivos</h1>
-        <span class="school-name">4° Año - ET N°1</span>
+        <div class="school-header">
+            <div class="school-logo-text">
+                <span class="barra">|</span> ET N°1
+            </div>
+            <div class="school-titles">
+                <h1>Sistemas constructivos</h1>
+                <span class="school-name">4° Año - Taller</span>
+            </div>
+        </div>
 
         <button id="btn-theme" class="theme-btn" aria-label="Cambiar tema claro/oscuro">
-            🌙
+             ☾
         </button>
 
         <nav>
@@ -137,7 +146,7 @@
             // Función para actualizar el texto del botón
             function updateThemeButton() {
                 const isDark = document.body.classList.contains('dark-mode');
-                themeBtn.innerHTML = isDark ? '☀️ Modo Claro' : '🌙 Modo Oscuro';
+                themeBtn.innerHTML = isDark ? '☼' : ' ☾';
             }
             
             // Cargar tema guardado (usando 'dark-mode' consistente)
