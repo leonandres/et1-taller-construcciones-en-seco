@@ -1,0 +1,339 @@
+/* ============================================================
+   CLASE 1 - SEGURIDAD E HIGIENE
+   Estilos exclusivos para esta página
+   ============================================================ */
+
+/* ===== 1. HERO MEJORADO ===== */
+.hero-clase1 {
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 50%, #1a365d 100%);
+    color: white;
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    margin-bottom: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-clase1::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(230, 126, 34, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-clase1::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-clase1 .hero-icon {
+    font-size: 4rem;
+    color: var(--accent);
+    flex-shrink: 0;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.hero-clase1 .hero-text {
+    z-index: 1;
+}
+
+.hero-clase1 .badge {
+    background: var(--accent);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    padding: 5px 18px;
+    letter-spacing: 1.5px;
+}
+
+.hero-clase1 h2 {
+    color: white;
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+    padding-left: 0;
+    font-weight: 800;
+}
+
+.hero-clase1 h2::before {
+    display: none;
+}
+
+.hero-clase1 p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    margin: 0;
+    max-width: 600px;
+}
+
+/* ===== 2. SUBTÍTULOS CON NÚMERO ESTILIZADO ===== */
+.subtitulo-seccion {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.subtitulo-seccion .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 48px;
+    background: var(--icon-bg);
+    color: white;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0 4px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.subtitulo-seccion:hover .num {
+    background: var(--icon-hover);
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.subtitulo-seccion .texto {
+    flex: 1;
+}
+
+/* Variante con barra decorativa (alternativa) */
+.subtitulo-seccion.barra .num {
+    background: transparent;
+    color: var(--icon-bg);
+    min-width: auto;
+    padding: 0 8px 0 0;
+    border-right: 4px solid var(--icon-bg);
+    border-radius: 0;
+    font-size: 1.6rem;
+    height: auto;
+}
+
+.subtitulo-seccion.barra:hover .num {
+    transform: none;
+    background: transparent;
+    color: var(--icon-hover);
+    border-right-color: var(--icon-hover);
+}
+
+/* ===== 3. TARJETAS EPP ===== */
+.epp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.epp-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.epp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
+}
+
+.epp-card .epp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+    font-size: 2rem;
+    color: white;
+    background: var(--icon-bg);
+    transition: all 0.3s ease;
+}
+
+.epp-card:hover .epp-icon {
+    background: var(--icon-hover);
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.epp-card h4 {
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.epp-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* ===== 4. TARJETAS DE RIESGO ===== */
+.riesgo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.riesgo-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.8rem;
+    border: 1px solid var(--border-color);
+    border-left-width: 6px;
+    transition: all 0.3s ease;
+}
+
+.riesgo-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.riesgo-card .riesgo-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.riesgo-card h4 {
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.riesgo-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* Colores específicos para cada riesgo */
+.riesgo-card.riesgo-altura {
+    border-left-color: #e74c3c;
+}
+.riesgo-card.riesgo-altura .riesgo-icon { color: #e74c3c; }
+
+.riesgo-card.riesgo-electrico {
+    border-left-color: #f39c12;
+}
+.riesgo-card.riesgo-electrico .riesgo-icon { color: #f39c12; }
+
+.riesgo-card.riesgo-orden {
+    border-left-color: #2ecc71;
+}
+.riesgo-card.riesgo-orden .riesgo-icon { color: #2ecc71; }
+
+/* ===== 5. ACTIVIDAD PRÁCTICA ===== */
+.actividad-box {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px dashed var(--border-color);
+    margin-top: 2.5rem;
+}
+
+.actividad-box h3 {
+    margin-top: 0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.actividad-box h3 i {
+    color: var(--accent);
+    font-size: 1.8rem;
+}
+
+.checklist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.checklist-grid li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.8rem;
+    background: var(--bg-main);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+}
+
+.checklist-grid li:hover {
+    background: var(--border-color);
+}
+
+.checklist-grid li i {
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+/* ===== 6. RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero-clase1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+    
+    .hero-clase1 .hero-icon {
+        font-size: 3rem;
+    }
+    
+    .hero-clase1 p {
+        max-width: 100%;
+    }
+    
+    .checklist-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subtitulo-seccion {
+        font-size: 1.4rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .subtitulo-seccion .num {
+        min-width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}

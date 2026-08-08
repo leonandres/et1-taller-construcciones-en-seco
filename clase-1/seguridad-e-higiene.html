@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguridad e higiene | ET N°1</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><!-- Contorno del edificio --><rect x='25' y='20' width='50' height='65' fill='none' stroke='%231a2a3a' stroke-width='2.5'/><line x1='25' y1='40' x2='75' y2='40' stroke='%231a2a3a' stroke-width='1.5'/><line x1='25' y1='55' x2='75' y2='55' stroke='%231a2a3a' stroke-width='1.5'/><line x1='25' y1='70' x2='75' y2='70' stroke='%231a2a3a' stroke-width='1.5'/><rect x='32' y='43' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='46' y='43' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='60' y='43' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='32' y='58' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='46' y='58' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='60' y='58' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='32' y='73' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='46' y='73' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='60' y='73' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='42' y='83' width='16' height='10' fill='none' stroke='%231a2a3a' stroke-width='1.5'/><line x1='50' y1='20' x2='50' y2='10' stroke='%231a2a3a' stroke-width='1.5'/></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='25' y='20' width='50' height='65' fill='none' stroke='%231a2a3a' stroke-width='2.5'/><line x1='25' y1='40' x2='75' y2='40' stroke='%231a2a3a' stroke-width='1.5'/><line x1='25' y1='55' x2='75' y2='55' stroke='%231a2a3a' stroke-width='1.5'/><line x1='25' y1='70' x2='75' y2='70' stroke='%231a2a3a' stroke-width='1.5'/><rect x='32' y='43' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='46' y='43' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='60' y='43' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='32' y='58' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='46' y='58' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='60' y='58' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='32' y='73' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='46' y='73' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='60' y='73' width='8' height='8' fill='none' stroke='%231a2a3a' stroke-width='1'/><rect x='42' y='83' width='16' height='10' fill='none' stroke='%231a2a3a' stroke-width='1.5'/><line x1='50' y1='20' x2='50' y2='10' stroke='%231a2a3a' stroke-width='1.5'/></svg>">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="clase1.css">
 </head>
 <body>
 
@@ -28,13 +30,13 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="seguridad-e-higiene.html">Clase 1: Seg. e higiene</a></li>
+                <li><a href="seguridad-e-higiene.html" class="active">Clase 1: Seg. e higiene</a></li>
                 <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y carpinterías</a></li>
                 <li><a href="../clase-3/clase3.html">Clase 3: Pieles de vidrio</a></li>
                 <li><a href="../clase-4/clase4.html">Clase 4: Pinturas</a></li>
                 
                 <li class="has-submenu" id="sistemas-menu">
-                    <a href="javascript:void(0)" onclick="toggleSubmenu(event)">Clase 5: Construcción en seco</a>
+                    <a href="javascript:void(0)" id="submenu-trigger" aria-expanded="false">Clase 5: Construcción en seco</a>
                     <ul class="submenu">
                         <li><a href="../clase-5/sistemas.html">Sistemas de construcción</a></li>
                         <li><a href="../clase-5/historia.html">Historia y evolución</a></li>
@@ -51,102 +53,136 @@
 
     <main>
         <div class="container">
-            <div class="hero-home">
-                <span class="badge">Unidad temática 1</span>
-                <h2>Seguridad e higiene en obra</h2>
-                <p>
-                    Protocolos, EPP y prevención de riesgos en el taller de construcciones.
-                </p>
+            
+            <!-- ===== HERO MEJORADO ===== -->
+            <div class="hero-clase1">
+                <div class="hero-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <div class="hero-text">
+                    <span class="badge">Unidad temática 1</span>
+                    <h2>Seguridad e higiene en obra</h2>
+                    <p>Protocolos, EPP y prevención de riesgos en el taller de construcciones.</p>
+                </div>
             </div>
             
+            <!-- ===== INTRO ===== -->
             <div class="intro-box">
                 <p>La <strong>higiene y seguridad en el trabajo</strong> tiene que ver con la prevención de todo tipo de daños a la salud de los trabajadores. En una obra existen numerosos recaudos que deben ser tenidos en cuenta para prevenir accidentes y lesiones.</p>
                 <p>El marco legal general en Argentina es la <strong>Ley Nacional de Seguridad e Higiene en el Trabajo N° 19.587</strong>. Específicamente para la construcción, nos rige el <strong>Decreto Reglamentario 911/96</strong>, que establece las normas específicas, responsabilidades y el uso obligatorio de elementos de protección.</p>
             </div>
 
-            <h3 id="epp"><span class="title-bar"></span>1. Elementos de Protección Personal (EPP)</h3>
+            <!-- ===== EPP ===== -->
+            <h3 class="subtitulo-seccion">
+                <span class="num">01</span>
+                <span class="texto">Elementos de Protección Personal (EPP)</span>
+            </h3>
             <p>Los EPP son indispensables para prevenir accidentes de trabajo ante la presencia de riesgos específicos que no pueden ser aislados o eliminados. Según la normativa, deben ser provistos por el empleador y estar certificados.</p>
 
-            <div class="grid-pilares">
-                <div class="pilar-card">
+            <div class="epp-grid">
+                <div class="epp-card">
+                    <div class="epp-icon"><i class="fas fa-hard-hat"></i></div>
                     <h4>Cascos de Seguridad</h4>
-                    <p>Protegen contra caída de objetos y golpes. No se debe utilizar con la visera hacia la nuca ni llevar gorras por debajo. Es vital verificar siempre el estado del arnés interno.</p>
+                    <p>Protegen contra caída de objetos y golpes. No se debe utilizar con la visera hacia la nuca ni llevar gorras por debajo.</p>
                 </div>
 
-                <div class="pilar-card">
-                    <h4>Protección Ocular y Facial</h4>
-                    <p><strong>Anteojos:</strong> Protección frontal. <br><strong>Antiparras:</strong> Protección total (evita ingreso de polvo lateral). Indispensables para cortes, soldaduras y amolado.</p>
+                <div class="epp-card">
+                    <div class="epp-icon"><i class="fas fa-eye"></i></div>
+                    <h4>Protección Ocular</h4>
+                    <p><strong>Anteojos:</strong> Protección frontal. <strong>Antiparras:</strong> Protección total. Indispensables para cortes, soldaduras y amolado.</p>
                 </div>
 
-                <div class="pilar-card">
+                <div class="epp-card">
+                    <div class="epp-icon"><i class="fas fa-ear-deaf"></i></div>
                     <h4>Protección Auditiva</h4>
-                    <p>Necesaria en lugares con alto nivel sonoro (+85 dB) como al usar sierras o percutores. Previene la pérdida de audición progresiva e irreversible.</p>
+                    <p>Necesaria en lugares con alto nivel sonoro (+85 dB) como al usar sierras o percutores. Previene la pérdida de audición.</p>
                 </div>
 
-                <div class="pilar-card">
+                <div class="epp-card">
+                    <div class="epp-icon"><i class="fas fa-shoe-prints"></i></div>
                     <h4>Calzado y Guantes</h4>
-                    <p>Zapatos con puntera de acero y suela antideslizante/dieléctrica. Guantes específicos según la tarea (descarne, moteados, nitrilo) para evitar cortes y contacto con sustancias.</p>
+                    <p>Zapatos con puntera de acero y suela antideslizante. Guantes específicos según la tarea (descarne, moteados, nitrilo).</p>
                 </div>
             </div>
 
-            <h3 id="riesgos" style="margin-top: 4rem;"><span class="title-bar"></span>2. Factores de Riesgo Principales</h3>
+            <!-- ===== FACTORES DE RIESGO ===== -->
+            <h3 class="subtitulo-seccion">
+                <span class="num">02</span>
+                <span class="texto">Factores de riesgo principales</span>
+            </h3>
             
-            <div style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; transition: all 0.3s ease;">
-                <h4 style="color: var(--heading-color); margin-bottom: 0.5rem;"><span class="title-bar"></span>Caída de Altura</h4>
-                <p style="font-size: 0.95rem; margin-bottom: 0;">Ocurre en andamios, escaleras, excavaciones o huecos. <strong>Prevención:</strong> Barandas perimetrales (0.50m y 1m), zócalos, plataformas de mínimo 0.60m y uso obligatorio de arnés con cabo de vida independiente.</p>
+            <div class="riesgo-grid">
+                <div class="riesgo-card riesgo-altura">
+                    <span class="riesgo-icon"><i class="fas fa-person-falling"></i></span>
+                    <h4>Caída de altura</h4>
+                    <p>Ocurre en andamios, escaleras, excavaciones o huecos. <strong>Prevención:</strong> Barandas perimetrales (0.50m y 1m), zócalos, plataformas de mínimo 0.60m y uso obligatorio de arnés con cabo de vida independiente.</p>
+                </div>
+
+                <div class="riesgo-card riesgo-electrico">
+                    <span class="riesgo-icon"><i class="fas fa-bolt"></i></span>
+                    <h4>Riesgo eléctrico</h4>
+                    <p>Cortocircuitos o contactos directos/indirectos. <strong>Prevención:</strong> Uso de disyuntor diferencial, puesta a tierra, cables con doble aislación, tableros normalizados y herramientas en buen estado.</p>
+                </div>
+
+                <div class="riesgo-card riesgo-orden" style="grid-column: span 1;">
+                    <span class="riesgo-icon"><i class="fas fa-broom"></i></span>
+                    <h4>Orden y limpieza</h4>
+                    <p>No es una tarea extra, es prevención. <strong>Beneficios:</strong> Disminuye accidentes, aumenta el espacio de trabajo, evita incendios y agiliza evacuaciones.</p>
+                </div>
             </div>
 
-            <div style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; transition: all 0.3s ease;">
-                <h4 style="color: var(--heading-color); margin-bottom: 0.5rem;"><span class="title-bar"></span>Riesgo Eléctrico</h4>
-                <p style="font-size: 0.95rem; margin-bottom: 0;">Cortocircuitos o contactos directos/indirectos. <strong>Prevención:</strong> Uso de disyuntor diferencial, puesta a tierra, cables con doble aislación, tableros normalizados y herramientas en buen estado.</p>
-            </div>
-
-            <div style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; transition: all 0.3s ease;">
-                <h4 style="color: var(--heading-color); margin-bottom: 0.5rem;"><span class="title-bar"></span>Orden y Limpieza</h4>
-                <p style="font-size: 0.95rem; margin-bottom: 0;">No es una tarea extra, es prevención. <strong>Beneficios:</strong> Disminuye accidentes, aumenta el espacio de trabajo, evita incendios y agiliza eventuales evacuaciones al mantener vías de circulación despejadas.</p>
-            </div>
-
-            <div class="quiz-container" style="margin-top: 4rem;">
-                <h3><span class="title-bar"></span>Actividad Práctica: Auditoría Fotográfica</h3>
+            <!-- ===== ACTIVIDAD PRÁCTICA ===== -->
+            <div class="actividad-box">
+                <h3><i class="fas fa-clipboard-list"></i> Actividad práctica: Auditoría fotográfica</h3>
                 <p>A partir de la foto de la obra asignada, realiza un punteo observando los siguientes ítems de seguridad. ¿Se cumplen o hay infracciones?</p>
-                <ul style="text-align: left; display: inline-block; margin-top: 1rem; color: var(--text-main);">
-                    <li>✅ Uso de EPP (Cascos, guantes, lentes, calzado).</li>
-                    <li>✅ Protección de los tableros eléctricos.</li>
-                    <li>✅ Sistemas de señalización y vallado.</li>
-                    <li>✅ Condiciones de circulación y acopio de materiales.</li>
-                    <li>✅ Orden y limpieza en la zona de trabajo.</li>
-                    <li>✅ Medidas de prevención ante caída de personas u objetos.</li>
+                
+                <ul class="checklist-grid">
+                    <li><i class="fas fa-check-circle"></i> Uso de EPP (Cascos, guantes, lentes, calzado)</li>
+                    <li><i class="fas fa-check-circle"></i> Protección de los tableros eléctricos</li>
+                    <li><i class="fas fa-check-circle"></i> Sistemas de señalización y vallado</li>
+                    <li><i class="fas fa-check-circle"></i> Condiciones de circulación y acopio</li>
+                    <li><i class="fas fa-check-circle"></i> Orden y limpieza en la zona de trabajo</li>
+                    <li><i class="fas fa-check-circle"></i> Medidas contra caída de personas u objetos</li>
                 </ul>
             </div>
 
+            <!-- ===== RECURSOS ===== -->
             <div class="recursos-box" style="margin-top: 3rem;">
                 <h3><span class="title-bar"></span>Material complementario y descargas</h3>
                 <ul>
-                    <li><a href="Normas y elementos de seguridad.docx" target="_blank">📄 Normas y elementos de seguridad (Word)</a></li>
-                    <li><a href="Material Anexo - EPP y factor de riesgo.pdf" target="_blank">📄 Anexo: EPP y factores de riesgo (PDF)</a></li>
-                    <li><a href="Material Anexo - Seguridad e higiene en obra.pdf" target="_blank">📄 Cartilla GCBA: Higiene y Seguridad (PDF)</a></li>
-                    <li><a href="Punteo de items para observar en la foto que hayan tomado.docx" target="_blank">📝 Punteo para actividad fotográfica (Word)</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-file-word"></i> Normas y elementos de seguridad (Word)</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-file-pdf"></i> Anexo: EPP y factores de riesgo (PDF)</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-file-pdf"></i> Cartilla GCBA: Higiene y Seguridad (PDF)</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-file-word"></i> Punteo para actividad fotográfica (Word)</a></li>
                 </ul>
             </div>
 
             <footer>
                 © 2026 - Taller de Sistemas Constructivos 4° - ET N°1
+                <i class="fas fa-hard-hat" style="font-size: 1.5rem; margin: 0.5rem auto 0; opacity: 0.5; display: block;"></i>
             </footer>
         </div>
     </main>
 
+    <script src="../sidebar.js"></script>
     <script>
-        // Abrir Submenú
-        function toggleSubmenu(event) {
-            event.preventDefault();
+        // ===== SUBMENÚ =====
+        (function() {
+            const submenuTrigger = document.getElementById('submenu-trigger');
             const menuItem = document.getElementById('sistemas-menu');
-            menuItem.classList.toggle('open');
-        }
+            
+            if (submenuTrigger && menuItem) {
+                submenuTrigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    menuItem.classList.toggle('open');
+                    submenuTrigger.setAttribute('aria-expanded', menuItem.classList.contains('open'));
+                });
+            }
+        })();
 
-        // Carga inicial del documento (Tema y Menú activo)
+        // ===== RESALTAR MENÚ ACTIVO =====
         document.addEventListener("DOMContentLoaded", function() {
-            // Resaltar menú actual
-            const currentPath = window.location.pathname.split('/').pop(); 
+            const currentPath = window.location.pathname.split('/').pop();
             const navLinks = document.querySelectorAll('nav ul li a');
             const submenu = document.getElementById('sistemas-menu');
             
@@ -161,6 +197,5 @@
             });
         });
     </script>
-    <script src="../sidebar.js"></script>
 </body>
 </html>
