@@ -1337,6 +1337,8 @@ nav {
     font-size: 0.95rem;
     font-weight: 400;
     position: relative;
+    width: 100%;               /* Ocupa todo el ancho del menú */
+    justify-content: flex-start; /* Alinea el texto a la izquierda, pegado al ícono */
 }
 
 /* Íconos */
