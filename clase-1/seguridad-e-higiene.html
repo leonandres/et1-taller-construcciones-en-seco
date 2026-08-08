@@ -54,7 +54,7 @@
     <main>
         <div class="container">
             
-            <!-- ===== HERO MEJORADO ===== -->
+            <!-- ===== HERO ===== -->
             <div class="hero-clase1">
                 <div class="hero-icon">
                     <i class="fas fa-hard-hat"></i>
@@ -72,41 +72,58 @@
                 <p>El marco legal general en Argentina es la <strong>Ley Nacional de Seguridad e Higiene en el Trabajo N° 19.587</strong>. Específicamente para la construcción, nos rige el <strong>Decreto Reglamentario 911/96</strong>, que establece las normas específicas, responsabilidades y el uso obligatorio de elementos de protección.</p>
             </div>
 
-            <!-- ===== EPP ===== -->
+            <!-- ===== SECCIÓN 1: EPP ===== -->
             <h3 class="subtitulo-seccion">
                 <span class="num">01</span>
                 <span class="texto">Elementos de Protección Personal (EPP)</span>
             </h3>
             <p>Los EPP son indispensables para prevenir accidentes de trabajo ante la presencia de riesgos específicos que no pueden ser aislados o eliminados. Según la normativa, deben ser provistos por el empleador y estar certificados.</p>
 
-            <div class="epp-grid">
-                <div class="epp-card">
-                    <div class="epp-icon"><i class="fas fa-hard-hat"></i></div>
-                    <h4>Cascos de Seguridad</h4>
-                    <p>Protegen contra caída de objetos y golpes. No se debe utilizar con la visera hacia la nuca ni llevar gorras por debajo.</p>
+            <!-- Galería de EPP con imágenes -->
+            <div class="epp-gallery">
+                <div class="epp-card-imagen">
+                    <img src="../img/clase1/epp-casco.jpg" alt="Casco de seguridad" onerror="this.src='https://via.placeholder.com/300x200/2c3e50/ffffff?text=Casco+EPP'">
+                    <div class="epp-card-imagen-body">
+                        <h4><i class="fas fa-hard-hat"></i> Casco de seguridad</h4>
+                        <p>Protege contra impacto de objetos y golpes en la cabeza.</p>
+                    </div>
                 </div>
 
-                <div class="epp-card">
-                    <div class="epp-icon"><i class="fas fa-eye"></i></div>
-                    <h4>Protección Ocular</h4>
-                    <p><strong>Anteojos:</strong> Protección frontal. <strong>Antiparras:</strong> Protección total. Indispensables para cortes, soldaduras y amolado.</p>
+                <div class="epp-card-imagen">
+                    <img src="../img/clase1/epp-antiparras.jpg" alt="Antiparras de seguridad" onerror="this.src='https://via.placeholder.com/300x200/2c3e50/ffffff?text=Antiparras+EPP'">
+                    <div class="epp-card-imagen-body">
+                        <h4><i class="fas fa-eye"></i> Protección ocular</h4>
+                        <p>Antiparras y anteojos para evitar partículas, polvo y salpicaduras.</p>
+                    </div>
                 </div>
 
-                <div class="epp-card">
-                    <div class="epp-icon"><i class="fas fa-ear-deaf"></i></div>
-                    <h4>Protección Auditiva</h4>
-                    <p>Necesaria en lugares con alto nivel sonoro (+85 dB) como al usar sierras o percutores. Previene la pérdida de audición.</p>
+                <div class="epp-card-imagen">
+                    <img src="../img/clase1/epp-auditivos.jpg" alt="Protectores auditivos" onerror="this.src='https://via.placeholder.com/300x200/2c3e50/ffffff?text=Protectores+Auditivos'">
+                    <div class="epp-card-imagen-body">
+                        <h4><i class="fas fa-ear-deaf"></i> Protección auditiva</h4>
+                        <p>Orejeras o tapones para ambientes con ruido superior a 85 dB.</p>
+                    </div>
                 </div>
 
-                <div class="epp-card">
-                    <div class="epp-icon"><i class="fas fa-shoe-prints"></i></div>
-                    <h4>Calzado y Guantes</h4>
-                    <p>Zapatos con puntera de acero y suela antideslizante. Guantes específicos según la tarea (descarne, moteados, nitrilo).</p>
+                <div class="epp-card-imagen">
+                    <img src="../img/clase1/epp-calzado.jpg" alt="Guantes de seguridad" onerror="this.src='https://via.placeholder.com/300x200/2c3e50/ffffff?text=Guantes+EPP'">
+                    <div class="epp-card-imagen-body">
+                        <h4><i class="fas fa-shoe-prints"></i> Calzado</h4>
+                        <p>Calzado con puntera de acero y guantes específicos para cada tarea.</p>
+                    </div>
+                </div>
+
+                <div class="epp-card-imagen">
+                    <img src="../img/clase1/epp-guantes.jpg" alt="Guantes de seguridad" onerror="this.src='https://via.placeholder.com/300x200/2c3e50/ffffff?text=Guantes+EPP'">
+                    <div class="epp-card-imagen-body">
+                        <h4><i class="fas fa-hand-holding"></i> Guantes de seguridad</h4>
+                        <p>Protegen contra cortes, quemaduras, abrasiones y riesgos químicos.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- ===== FACTORES DE RIESGO ===== -->
-            <h3 class="subtitulo-seccion">
+            <!-- ===== SECCIÓN 2: FACTORES DE RIESGO ===== -->
+            <h3 class="subtitulo-seccion" style="margin-top: 3rem;">
                 <span class="num">02</span>
                 <span class="texto">Factores de riesgo principales</span>
             </h3>
@@ -124,26 +141,89 @@
                     <p>Cortocircuitos o contactos directos/indirectos. <strong>Prevención:</strong> Uso de disyuntor diferencial, puesta a tierra, cables con doble aislación, tableros normalizados y herramientas en buen estado.</p>
                 </div>
 
-                <div class="riesgo-card riesgo-orden" style="grid-column: span 1;">
+                <div class="riesgo-card riesgo-orden">
                     <span class="riesgo-icon"><i class="fas fa-broom"></i></span>
                     <h4>Orden y limpieza</h4>
                     <p>No es una tarea extra, es prevención. <strong>Beneficios:</strong> Disminuye accidentes, aumenta el espacio de trabajo, evita incendios y agiliza evacuaciones.</p>
                 </div>
             </div>
 
-            <!-- ===== ACTIVIDAD PRÁCTICA ===== -->
-            <div class="actividad-box">
-                <h3><i class="fas fa-clipboard-list"></i> Actividad práctica: Auditoría fotográfica</h3>
-                <p>A partir de la foto de la obra asignada, realiza un punteo observando los siguientes ítems de seguridad. ¿Se cumplen o hay infracciones?</p>
-                
-                <ul class="checklist-grid">
-                    <li><i class="fas fa-check-circle"></i> Uso de EPP (Cascos, guantes, lentes, calzado)</li>
-                    <li><i class="fas fa-check-circle"></i> Protección de los tableros eléctricos</li>
-                    <li><i class="fas fa-check-circle"></i> Sistemas de señalización y vallado</li>
-                    <li><i class="fas fa-check-circle"></i> Condiciones de circulación y acopio</li>
-                    <li><i class="fas fa-check-circle"></i> Orden y limpieza en la zona de trabajo</li>
-                    <li><i class="fas fa-check-circle"></i> Medidas contra caída de personas u objetos</li>
-                </ul>
+            <!-- ===== SECCIÓN 3: ACTIVIDAD "ENCONTRÁ LA INFRACCIÓN" ===== -->
+            <h3 class="subtitulo-seccion" style="margin-top: 3rem;">
+                <span class="num">03</span>
+                <span class="texto">Actividad: Encontrá la infracción</span>
+            </h3>
+            
+            <div class="actividad-infraccion">
+                <div class="actividad-infraccion-imagen">
+                    <img src="../img/clase1/obra-insegura.jpg" alt="Obra con fallas de seguridad" onerror="this.src='https://via.placeholder.com/800x450/2c3e50/ffffff?text=Obra+con+fallas+de+seguridad'">
+                    
+                    <!-- Hotspots cliqueables -->
+                    <div class="hotspot" style="top: 25%; left: 15%;" data-riesgo="caida">
+                        <span class="hotspot-punto">⚠️</span>
+                        <div class="hotspot-info">
+                            <strong>Caída de altura</strong>
+                            <p>Andamio sin barandas perimetrales ni zócalos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hotspot" style="top: 55%; left: 70%;" data-riesgo="electrico">
+                        <span class="hotspot-punto">⚠️</span>
+                        <div class="hotspot-info">
+                            <strong>Estructura insegura</strong>
+                            <p>El andamio está armado con maderas sueltas, sin diagonales de arriostre ni zócalos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hotspot" style="top: 80%; left: 40%;" data-riesgo="orden">
+                        <span class="hotspot-punto">⚠️</span>
+                        <div class="hotspot-info">
+                            <strong>Falta de orden</strong>
+                            <p>Materiales acumulados obstruyendo la vía de circulación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="actividad-infraccion-texto">
+                    <p><i class="fas fa-search" style="color: var(--accent); margin-right: 0.5rem;"></i> <strong>Consigna:</strong> Hacé clic en los puntos rojos de la imagen para descubrir las infracciones de seguridad. ¿Qué elementos de protección faltan? ¿Qué riesgos identificás?</p>
+                </div>
+            </div>
+
+            <!-- ===== SECCIÓN 4: MINI CUESTIONARIO ===== -->
+            <h3 class="subtitulo-seccion" style="margin-top: 3rem;">
+                <span class="num">04</span>
+                <span class="texto">Evaluá lo que aprendiste</span>
+            </h3>
+
+            <div class="quiz-clase1">
+                <div class="quiz-pregunta">
+                    <p><strong>Pregunta 1:</strong> Según el Decreto Reglamentario 911/96, ¿qué elemento es obligatorio para trabajos en altura?</p>
+                    <div class="quiz-opciones">
+                        <button class="quiz-btn" data-correct="false">Casco de seguridad</button>
+                        <button class="quiz-btn" data-correct="true">Arnés con cabo de vida</button>
+                        <button class="quiz-btn" data-correct="false">Guantes de descarne</button>
+                    </div>
+                    <div class="quiz-feedback"></div>
+                </div>
+
+                <div class="quiz-pregunta">
+                    <p><strong>Pregunta 2:</strong> ¿Cuál es el nivel de ruido a partir del cual se recomienda usar protección auditiva?</p>
+                    <div class="quiz-opciones">
+                        <button class="quiz-btn" data-correct="false">65 dB</button>
+                        <button class="quiz-btn" data-correct="true">85 dB</button>
+                        <button class="quiz-btn" data-correct="false">100 dB</button>
+                    </div>
+                    <div class="quiz-feedback"></div>
+                </div>
+
+                <div class="quiz-pregunta">
+                    <p><strong>Pregunta 3:</strong> ¿Qué elemento es el más importante para prevenir el riesgo eléctrico en obra?</p>
+                    <div class="quiz-opciones">
+                        <button class="quiz-btn" data-correct="false">Cables de colores</button>
+                        <button class="quiz-btn" data-correct="true">Disyuntor diferencial</button>
+                        <button class="quiz-btn" data-correct="false">Tablero de madera</button>
+                    </div>
+                    <div class="quiz-feedback"></div>
+                </div>
             </div>
 
             <!-- ===== RECURSOS ===== -->
@@ -194,6 +274,80 @@
                         submenu.classList.add('open');
                     }
                 }
+            });
+        });
+
+        // ===== HOTSPOTS =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const hotspots = document.querySelectorAll('.hotspot');
+            hotspots.forEach(function(hotspot) {
+                hotspot.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    // Alternar visibilidad de la información
+                    const info = this.querySelector('.hotspot-info');
+                    const isVisible = info.style.opacity === '1';
+                    
+                    // Ocultar todos primero
+                    document.querySelectorAll('.hotspot-info').forEach(function(el) {
+                        el.style.opacity = '0';
+                        el.style.pointerEvents = 'none';
+                    });
+                    
+                    if (!isVisible) {
+                        info.style.opacity = '1';
+                        info.style.pointerEvents = 'auto';
+                    }
+                });
+            });
+
+            // Clic fuera para cerrar
+            document.addEventListener('click', function() {
+                document.querySelectorAll('.hotspot-info').forEach(function(el) {
+                    el.style.opacity = '0';
+                    el.style.pointerEvents = 'none';
+                });
+            });
+        });
+
+        // ===== QUIZ =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizBtns = document.querySelectorAll('.quiz-btn');
+            
+            quizBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    const parent = this.closest('.quiz-pregunta');
+                    const feedback = parent.querySelector('.quiz-feedback');
+                    const isCorrect = this.dataset.correct === 'true';
+                    const allBtns = parent.querySelectorAll('.quiz-btn');
+                    
+                    // Deshabilitar todos los botones
+                    allBtns.forEach(function(b) {
+                        b.disabled = true;
+                        b.style.opacity = '0.6';
+                        b.style.cursor = 'default';
+                    });
+                    
+                    // Resaltar el seleccionado
+                    if (isCorrect) {
+                        this.style.background = '#27ae60';
+                        feedback.innerHTML = '<i class="fas fa-check-circle"></i> ¡Correcto! Bien hecho.';
+                        feedback.className = 'quiz-feedback correcto';
+                    } else {
+                        this.style.background = '#e74c3c';
+                        feedback.innerHTML = '<i class="fas fa-times-circle"></i> Incorrecto. Revisá el texto de la clase.';
+                        feedback.className = 'quiz-feedback incorrecto';
+                        
+                        // Mostrar la respuesta correcta
+                        allBtns.forEach(function(b) {
+                            if (b.dataset.correct === 'true') {
+                                b.style.background = '#27ae60';
+                                b.style.border = '3px solid #27ae60';
+                            }
+                        });
+                    }
+                    
+                    feedback.style.display = 'block';
+                });
             });
         });
     </script>
