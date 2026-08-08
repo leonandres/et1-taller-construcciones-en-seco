@@ -96,11 +96,7 @@ La planificación bimestral completa se encuentra en `planificacion/planificacio
 
 ## 🔄 Última actualización
 
-Marzo 2026
+Agosto 2026
 
 ---
-
-**Escuela Técnica N°1 – Taller de Construcciones (4° año)**  
-Prof. Leon Andrés
-
   
