@@ -28,16 +28,32 @@
         </button>
         
         <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="seguridad-e-higiene.html" class="active">Clase 1: Seg. e higiene</a></li>
-                <li><a href="../clase-2/vidrios-y-carpinteria.html">Clase 2: Vidrios y carpinterías</a></li>
-                <li><a href="../clase-3/clase3.html">Clase 3: Pieles de vidrio</a></li>
-                <li><a href="../clase-4/clase4.html">Clase 4: Pinturas</a></li>
+            <div class="nav-header">
+                <span class="nav-title">Contenidos</span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link">
+                    <i class="fas fa-home"></i> <span>Inicio</span>
+                </a></li>
+                <li><a href="seguridad-e-higiene.html" class="nav-link active">
+                    <i class="fas fa-hard-hat"></i> <span>Clase 1: seg. e higiene</span>
+                </a></li>
+                <li><a href="../clase-2/vidrios-y-carpinteria.html" class="nav-link">
+                    <i class="fas fa-window-maximize"></i> <span>Clase 2: vidrios y carpintería</span>
+                </a></li>
+                <li><a href="../clase-3/clase3.html" class="nav-link">
+                    <i class="fas fa-glass-whiskey"></i> <span>Clase 3: pieles de vidrio</span>
+                </a></li>
+                <li><a href="../clase-4/clase4.html" class="nav-link">
+                    <i class="fas fa-paint-brush"></i> <span>Clase 4: pinturas</span>
+                </a></li>
                 
-                <li class="has-submenu" id="sistemas-menu">
-                    <a href="javascript:void(0)" id="submenu-trigger" aria-expanded="false">Clase 5: Construcción en seco</a>
-                    <ul class="submenu">
+                <li class="nav-item-dropdown">
+                    <a href="javascript:void(0)" class="nav-link dropdown-trigger" aria-expanded="false">
+                        <i class="fas fa-layer-group"></i> <span>Clase 5: construcción en seco</span>
+                        <i class="fas fa-chevron-right dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
                         <li><a href="../clase-5/sistemas.html">Sistemas de construcción</a></li>
                         <li><a href="../clase-5/historia.html">Historia y evolución</a></li>
                         <li><a href="../clase-5/tabiqueria.html">Tabiquería y placas</a></li>
@@ -45,8 +61,12 @@
                     </ul>
                 </li>
 
-                <li><a href="../clase-6/steel-framing.html">Clase 6: Steel framing</a></li>
-                <li><a href="../clase-7/revestimientos.html">Clase 7: Revestimientos</a></li>
+                <li><a href="../clase-6/steel-framing.html" class="nav-link">
+                    <i class="fas fa-cogs"></i> <span>Clase 6: steel framing</span>
+                </a></li>
+                <li><a href="../clase-7/revestimientos.html" class="nav-link">
+                    <i class="fas fa-th-large"></i> <span>Clase 7: revestimientos</span>
+                </a></li>
             </ul>
         </nav>
     </aside>
